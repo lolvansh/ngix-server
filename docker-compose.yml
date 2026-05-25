@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  react_frontend:
+    # We will update this URL later once GitHub creates your image
+    image: ghcr.io/your-github-username/your-repo-name:latest
+    container_name: react_portfolio
+    ports:
+      - "8080:80"
+    restart: unless-stopped
